@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f7f4">
+  <meta name="description" content="ShopTech: tecnologia, acessórios e produtos selecionados para o seu dia a dia.">
+  <title>ShopTech — Tecnologia que acompanha você</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="announcement">
+    <p>TECNOLOGIA PARA SUA ROTINA <span>·</span> Confira nossa seleção especial</p>
+  </div>
+
+  <header class="header">
+    <a href="#" class="logo" aria-label="ShopTech, página inicial">
+      shop<span>tech</span><i>.</i>
+    </a>
+
+    <form class="search" id="searchForm" role="search">
+      <input id="searchInput" type="search" placeholder="O que você está procurando?" aria-label="Buscar produtos">
+      <button type="submit" aria-label="Pesquisar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+      </button>
+    </form>
+
+    <div class="header-actions">
+      <button class="header-action" id="accountBtn" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c0-4 2.8-6 7-6s7 2 7 6"></path></svg>
+        <span>Minha conta</span>
+      </button>
+
+      <button class="header-action" id="favoritesBtn" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 8.8c0 4.2-8.5 10-8.5 10s-8.5-5.8-8.5-10a4.5 4.5 0 0 1 8.5-2 4.5 4.5 0 0 1 8.5 2Z"></path></svg>
+        <span>Favoritos</span>
+        <b class="count" id="favoritesCount">0</b>
+      </button>
+
+      <button class="header-action cart-trigger" id="cartBtn" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.5L22 8H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+        <span>Sacola</span>
+        <b class="count" id="cartCount">0</b>
+      </button>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="nav" id="mainNav" aria-label="Menu principal">
+    <a class="nav-link active" href="#inicio">Início</a>
+    <a class="nav-link" href="#categorias">Categorias</a>
+    <a class="nav-link" href="#produtos" data-filter="Todos">Todos os produtos</a>
+    <a class="nav-link" href="#produtos" data-filter="Ofertas">Ofertas</a>
+    <a class="nav-link" href="#produtos" data-filter="Novidades">Novidades</a>
+    <a class="nav-link" href="#sobre">Sobre a ShopTech</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> SELEÇÃO SHOPTECH</span>
+        <h1>Seu próximo nível<br>começa com <em>tecnologia.</em></h1>
+        <p>Produtos que fazem a diferença na sua rotina. Design, praticidade e inovação em um só lugar.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#produtos">Explorar produtos <span>↗</span></a>
+          <a class="text-link" href="#categorias">Conhecer categorias <span>→</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-mark">S.</span>
+          <p><strong>Escolhas inteligentes.</strong><br>Uma seleção feita para você.</p>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1300&q=85" alt="Seleção de dispositivos eletrônicos e tecnologia">
+        <div class="hero-image-label">
+          <span>TECNOLOGIA & DESIGN</span>
+          <strong>O futuro está nos detalhes.</strong>
+        </div>
+        <div class="hero-sticker"><span>SHOP</span><strong>TECH.</strong><i>01 / 26</i></div>
+      </div>
+      <div class="hero-index">01 — INOVAÇÃO PARA TODOS OS DIAS</div>
+    </section>
+
+    <section class="benefits" aria-label="Vantagens da loja">
+      <div class="benefit">
+        <span class="benefit-icon">↗</span>
+        <div><strong>Compra simplificada</strong><small>Uma experiência sem complicação</small></div>
+      </div>
+      <div class="benefit">
+        <span class="benefit-icon">◇</span>
+        <div><strong>Produtos selecionados</strong><small>Qualidade em cada detalhe</small></div>
+      </div>
+      <div class="benefit">
+        <span class="benefit-icon">◎</span>
+        <div><strong>Atendimento próximo</strong><small>Estamos aqui para ajudar</small></div>
+      </div>
+      <div class="benefit">
+        <span class="benefit-icon">✓</span>
+        <div><strong>Transparência</strong><small>Informações claras na sua compra</small></div>
+      </div>
+    </section>
+
+    <section class="categories section-wrap" id="categorias">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORE A SHOPTECH</span>
+          <h2>Encontre o que <em>combina com você.</em></h2>
+        </div>
+        <p>Da sua mesa de trabalho aos momentos de lazer, descubra sua próxima escolha.</p>
+      </div>
+
+      <div class="category-grid">
+        <button class="category-card category-large" data-category="Informática" type="button">
+          <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=80" alt="Notebook para trabalho e estudo" loading="lazy">
+          <span class="category-overlay"></span>
+          <span class="category-info"><small>01 / PRODUTIVIDADE</small><strong>Informática</strong><i>Explorar coleção ↗</i></span>
+        </button>
+        <button class="category-card" data-category="Áudio" type="button">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=80" alt="Fone de ouvido moderno" loading="lazy">
+          <span class="category-overlay"></span>
+          <span class="category-info"><small>02 / SOM</small><strong>Áudio</strong><i>Explorar coleção ↗</i></span>
+        </button>
+        <button class="category-card" data-category="Acessórios" type="button">
+          <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=700&q=80" alt="Mouse para computador" loading="lazy">
+          <span class="category-overlay"></span>
+          <span class="category-info"><small>03 / SETUP</small><strong>Acessórios</strong><i>Explorar coleção ↗</i></span>
+        </button>
+        <button class="category-card" data-category="Celulares" type="button">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=80" alt="Smartphone" loading="lazy">
+          <span class="category-overlay"></span>
+          <span class="category-info"><small>04 / CONEXÃO</small><strong>Celulares</strong><i>Explorar coleção ↗</i></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="products-section section-wrap" id="produtos">
+      <div class="section-heading product-heading">
+        <div>
+          <span class="eyebrow">CURADORIA SHOPTECH</span>
+          <h2>Peças que fazem <em>a diferença.</em></h2>
+        </div>
+        <a class="text-link" href="#produtos" id="showAll">Ver todos os produtos ↗</a>
+      </div>
+
+      <div class="product-toolbar">
+        <div class="filter-list" id="filterList" aria-label="Filtrar produtos">
+          <button class="filter-btn selected" data-filter="Todos" type="button">Todos</button>
+          <button class="filter-btn" data-filter="Ofertas" type="button">Ofertas</button>
+          <button class="filter-btn" data-filter="Novidades" type="button">Novidades</button>
+          <button class="filter-btn" data-filter="Mais vendidos" type="button">Mais vendidos</button>
+        </div>
+        <label class="sort-control">
+          <span>Ordenar:</span>
+          <select id="sortSelect" aria-label="Ordenar produtos">
+            <option value="featured">Destaques</option>
+            <option value="price-asc">Menor preço</option>
+            <option value="price-desc">Maior preço</option>
+            <option value="name">Nome A–Z</option>
+          </select>
+        </label>
+      </div>
+
+      <p class="results-info" id="resultsInfo" aria-live="polite"></p>
+      <div class="products-grid" id="productsGrid"></div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        <span>⌕</span>
+        <h3>Nenhum produto encontrado.</h3>
+        <p>Tente outro termo ou escolha uma categoria diferente.</p>
+        <button class="button button-dark" id="clearFilters" type="button">Ver todos os produtos</button>
+      </div>
+    </section>
+
+    <section class="editorial" id="sobre">
+      <div class="editorial-image">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=85" alt="Ambiente de trabalho com equipamentos tecnológicos" loading="lazy">
+      </div>
+      <div class="editorial-copy">
+        <span class="eyebrow">MAIS DO QUE PRODUTOS</span>
+        <h2>Tecnologia que faz sentido para <em>sua vida.</em></h2>
+        <p>Acreditamos que bons produtos não precisam ser complicados. A ShopTech reúne tecnologia e praticidade para ajudar você a escolher melhor, trabalhar melhor e aproveitar cada momento.</p>
+        <a class="button button-light" href="#categorias">Descubra a ShopTech <span>↗</span></a>
+        <span class="editorial-number">ST — 001</span>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <span class="eyebrow">CARTA SHOPTECH</span>
+        <h2>Novidades boas chegam <em>primeiro.</em></h2>
+        <p>Cadastre seu e-mail para receber lançamentos e ofertas da loja.</p>
+      </div>
+      <form id="newsletterForm" class="newsletter-form">
+        <label for="newsletterEmail" class="visually-hidden">Seu e-mail</label>
+        <input id="newsletterEmail" type="email" placeholder="Seu melhor e-mail" required>
+        <button type="submit">Quero receber ↗</button>
+        <small id="newsletterMessage" aria-live="polite">Ao se cadastrar, você concorda em receber novidades por e-mail.</small>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#" class="logo">shop<span>tech</span><i>.</i></a>
+        <p>Tecnologia, design e praticidade para acompanhar você todos os dias.</p>
+      </div>
+      <div class="footer-column">
+        <strong>Loja</strong>
+        <a href="#categorias">Categorias</a>
+        <a href="#produtos">Todos os produtos</a>
+        <a href="#produtos" data-filter="Ofertas">Ofertas</a>
+        <a href="#produtos" data-filter="Novidades">Novidades</a>
+      </div>
+      <div class="footer-column">
+        <strong>Atendimento</strong>
+        <a href="mailto:contato@shoptech.com.br">Fale conosco</a>
+        <a href="#sobre">Sobre a ShopTech</a>
+        <span>Segunda a sexta</span>
+        <span>Consulte nossos canais</span>
+      </div>
+      <div class="footer-column">
+        <strong>Informações</strong>
+        <a href="#politicas">Privacidade</a>
+        <a href="#politicas">Trocas e devoluções</a>
+        <a href="#politicas">Entrega e frete</a>
+        <a href="#politicas">Termos de uso</a>
+      </div>
+    </div>
+    <div class="footer-bottom" id="politicas">
+      <span>© <span id="currentYear"></span> ShopTech. Todos os direitos reservados.</span>
+      <span>Uma nova forma de escolher tecnologia. <b>ST.</b></span>
+    </div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Sua sacola" aria-hidden="true">
+    <div class="drawer-header">
+      <div><span class="eyebrow">SHOPTECH</span><h2>Sua sacola <span id="drawerItemCount">(0)</span></h2></div>
+      <button class="close-drawer" id="closeCart" type="button" aria-label="Fechar sacola">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty">
+      <span>↗</span>
+      <h3>Sua sacola está vazia.</h3>
+      <p>Descubra produtos que combinam com você.</p>
+      <button class="button button-dark" id="continueShopping" type="button">Continuar comprando</button>
+    </div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total"><span>Subtotal</span><strong id="cartSubtotal">R$ 0,00</strong></div>
+      <p>Frete e condições de entrega devem ser confirmados no fechamento do pedido.</p>
+      <button class="button button-dark checkout-btn" id="checkoutBtn" type="button">Finalizar pedido ↗</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
